@@ -1,0 +1,1497 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/archiverjs/node-zip-stream">zip-stream (v1.1.1)</a>
+</h1>
+<h4>a streaming zip archive generator.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.zip-stream">module zip-stream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.zip-stream">
+            function <span class="apidocSignatureSpan"></span>zip-stream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_">
+            function <span class="apidocSignatureSpan">zip-stream.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_">
+            function <span class="apidocSignatureSpan">zip-stream.</span>super_.super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">zip-stream.</span>super_.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">zip-stream.</span>super_.super_.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">zip-stream.</span>super_.super_.super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.zip-stream.super_">module zip-stream.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_">
+            function <span class="apidocSignatureSpan">zip-stream.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.zip-stream.super_.prototype">module zip-stream.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._afterAppend">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_afterAppend
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._appendBuffer">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_appendBuffer
+            <span class="apidocSignatureSpan">(ae, source, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._appendStream">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_appendStream
+            <span class="apidocSignatureSpan">(ae, source, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._defaults">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_defaults
+            <span class="apidocSignatureSpan">(o)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._finish">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_finish
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._normalizeEntry">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_normalizeEntry
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._smartStream">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_smartStream
+            <span class="apidocSignatureSpan">(ae, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._writeCentralDirectoryEnd">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeCentralDirectoryEnd
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._writeCentralDirectoryZip64">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeCentralDirectoryZip64
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._writeCentralFileHeader">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeCentralFileHeader
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._writeDataDescriptor">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeDataDescriptor
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype._writeLocalFileHeader">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeLocalFileHeader
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype.getComment">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>getComment
+            <span class="apidocSignatureSpan">(comment)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype.isZip64">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>isZip64
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.prototype.setComment">
+            function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>setComment
+            <span class="apidocSignatureSpan">(comment)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.zip-stream.super_.super_">module zip-stream.super_.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.super_">
+            function <span class="apidocSignatureSpan">zip-stream.super_.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.zip-stream.super_.super_.prototype">module zip-stream.super_.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype._appendBuffer">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_appendBuffer
+            <span class="apidocSignatureSpan">(zae, source, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype._appendStream">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_appendStream
+            <span class="apidocSignatureSpan">(zae, source, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype._emitErrorCallback">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_emitErrorCallback
+            <span class="apidocSignatureSpan">(err)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype._finish">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_finish
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype._normalizeEntry">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_normalizeEntry
+            <span class="apidocSignatureSpan">(ae)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype._transform">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_transform
+            <span class="apidocSignatureSpan">(chunk, encoding, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype.entry">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>entry
+            <span class="apidocSignatureSpan">(ae, source, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype.finish">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>finish
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype.getBytesWritten">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>getBytesWritten
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.prototype.write">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>write
+            <span class="apidocSignatureSpan">(chunk, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.zip-stream.super_.super_.super_.prototype">module zip-stream.super_.super_.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.super_.prototype._read">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>_read
+            <span class="apidocSignatureSpan">(n)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.super_.prototype._transform">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>_transform
+            <span class="apidocSignatureSpan">(chunk, encoding, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.super_.prototype._write">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>_write
+            <span class="apidocSignatureSpan">(chunk, encoding, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.zip-stream.super_.super_.super_.prototype.push">
+            function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>push
+            <span class="apidocSignatureSpan">(chunk, encoding)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.zip-stream" id="apidoc.module.zip-stream">module zip-stream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.zip-stream" id="apidoc.element.zip-stream.zip-stream">
+        function <span class="apidocSignatureSpan"></span>zip-stream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">zip-stream = function (options) {
+  if (!(this instanceof ZipStream)) {
+    return new ZipStream(options);
+  }
+
+  options = this.options = options || {};
+  options.zlib = options.zlib || {};
+
+  ZipArchiveOutputStream.call(this, options);
+
+  if (typeof options.level === 'number' &amp;&amp; options.level &gt;= 0) {
+    options.zlib.level = options.level;
+    delete options.level;
+  }
+
+  if (typeof options.zlib.level === 'number' &amp;&amp; options.zlib.level === 0) {
+    options.store = true;
+  }
+
+  if (options.comment &amp;&amp; options.comment.length &gt; 0) {
+    this.setComment(options.comment);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_" id="apidoc.element.zip-stream.super_">
+        function <span class="apidocSignatureSpan">zip-stream.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+  if (!(this instanceof ZipArchiveOutputStream)) {
+    return new ZipArchiveOutputStream(options);
+  }
+
+  options = this.options = this._defaults(options);
+
+  ArchiveOutputStream.call(this, options);
+
+  this._entry = null;
+  this._entries = [];
+  this._archive = {
+    centralLength: 0,
+    centralOffset: 0,
+    comment: '',
+    finish: false,
+    finished: false,
+    processing: false,
+    forceZip64: options.forceZip64,
+    forceLocalTime: options.forceLocalTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_" id="apidoc.element.zip-stream.super_.super_">
+        function <span class="apidocSignatureSpan">zip-stream.</span>super_.super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.super_ = function (options) {
+  if (!(this instanceof ArchiveOutputStream)) {
+    return new ArchiveOutputStream(options);
+  }
+
+  Transform.call(this, options);
+
+  this.offset = 0;
+  this._archive = {
+    finish: false,
+    finished: false,
+    processing: false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.zip-stream.super_" id="apidoc.module.zip-stream.super_">module zip-stream.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_" id="apidoc.element.zip-stream.super_.super_">
+        function <span class="apidocSignatureSpan">zip-stream.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+  if (!(this instanceof ArchiveOutputStream)) {
+    return new ArchiveOutputStream(options);
+  }
+
+  Transform.call(this, options);
+
+  this.offset = 0;
+  this._archive = {
+    finish: false,
+    finished: false,
+    processing: false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.zip-stream.super_.prototype" id="apidoc.module.zip-stream.super_.prototype">module zip-stream.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._afterAppend" id="apidoc.element.zip-stream.super_.prototype._afterAppend">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_afterAppend
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_afterAppend = function (ae) {
+  this._entries.push(ae);
+
+  if (ae.getGeneralPurposeBit().usesDataDescriptor()) {
+    this._writeDataDescriptor(ae);
+  }
+
+  this._archive.processing = false;
+  this._entry = null;
+
+  if (this._archive.finish &amp;&amp; !this._archive.finished) {
+    this._finish();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._appendBuffer" id="apidoc.element.zip-stream.super_.prototype._appendBuffer">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_appendBuffer
+        <span class="apidocSignatureSpan">(ae, source, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_appendBuffer = function (ae, source, callback) {
+  if (source.length === 0) {
+    ae.setMethod(constants.METHOD_STORED);
+  }
+
+  var method = ae.getMethod();
+
+  if (method === constants.METHOD_STORED) {
+    ae.setSize(source.length);
+    ae.setCompressedSize(source.length);
+    ae.setCrc(crc32.unsigned(source));
+  }
+
+  this._writeLocalFileHeader(ae);
+
+  if (method === constants.METHOD_STORED) {
+    this.write(source);
+    this._afterAppend(ae);
+    callback(null, ae);
+    return;
+  } else if (method === constants.METHOD_DEFLATED) {
+    this._smartStream(ae, callback).end(source);
+    return;
+  } else {
+    callback(new Error('compression method ' + method + ' not implemented'));
+    return;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._appendStream" id="apidoc.element.zip-stream.super_.prototype._appendStream">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_appendStream
+        <span class="apidocSignatureSpan">(ae, source, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_appendStream = function (ae, source, callback) {
+  ae.getGeneralPurposeBit().useDataDescriptor(true);
+  ae.setVersionNeededToExtract(constants.MIN_VERSION_DATA_DESCRIPTOR);
+
+  this._writeLocalFileHeader(ae);
+
+  var smart = this._smartStream(ae, callback);
+  source.once('error', function(err) {
+    smart.emit('error', err);
+    smart.end();
+  })
+  source.pipe(smart);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._defaults" id="apidoc.element.zip-stream.super_.prototype._defaults">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_defaults
+        <span class="apidocSignatureSpan">(o)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_defaults = function (o) {
+  if (typeof o !== 'object') {
+    o = {};
+  }
+
+  if (typeof o.zlib !== 'object') {
+    o.zlib = {};
+  }
+
+  if (typeof o.zlib.level !== 'number') {
+    o.zlib.level = constants.ZLIB_BEST_SPEED;
+  }
+
+  o.forceZip64 = !!o.forceZip64;
+  o.forceLocalTime = !!o.forceLocalTime;
+
+  return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._finish" id="apidoc.element.zip-stream.super_.prototype._finish">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_finish
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_finish = function () {
+  this._archive.centralOffset = this.offset;
+
+  this._entries.forEach(function(ae) {
+    this._writeCentralFileHeader(ae);
+  }.bind(this));
+
+  this._archive.centralLength = this.offset - this._archive.centralOffset;
+
+  if (this.isZip64()) {
+    this._writeCentralDirectoryZip64();
+  }
+
+  this._writeCentralDirectoryEnd();
+
+  this._archive.processing = false;
+  this._archive.finish = true;
+  this._archive.finished = true;
+  this.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._normalizeEntry" id="apidoc.element.zip-stream.super_.prototype._normalizeEntry">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_normalizeEntry
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_normalizeEntry = function (ae) {
+  if (ae.getMethod() === -1) {
+    ae.setMethod(constants.METHOD_DEFLATED);
+  }
+
+  if (ae.getMethod() === constants.METHOD_DEFLATED) {
+    ae.getGeneralPurposeBit().useDataDescriptor(true);
+    ae.setVersionNeededToExtract(constants.MIN_VERSION_DATA_DESCRIPTOR);
+  }
+
+  if (ae.getTime() === -1) {
+    ae.setTime(new Date(), this._archive.forceLocalTime);
+  }
+
+  ae._offsets = {
+    file: 0,
+    data: 0,
+    contents: 0,
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._smartStream" id="apidoc.element.zip-stream.super_.prototype._smartStream">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_smartStream
+        <span class="apidocSignatureSpan">(ae, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_smartStream = function (ae, callback) {
+  var deflate = ae.getMethod() === constants.METHOD_DEFLATED;
+  var process = deflate ? new DeflateCRC32Stream(this.options.zlib) : new CRC32Stream();
+  var error = null;
+
+  function handleStuff() {
+    var digest = process.digest().readUInt32BE(0);
+    ae.setCrc(digest);
+    ae.setSize(process.size());
+    ae.setCompressedSize(process.size(true));
+    this._afterAppend(ae);
+    callback(error, ae);
+  }
+
+  process.once('end', handleStuff.bind(this));
+  process.once('error', function(err) {
+    error = err;
+  });
+
+  process.pipe(this, { end: false });
+
+  return process;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._writeCentralDirectoryEnd" id="apidoc.element.zip-stream.super_.prototype._writeCentralDirectoryEnd">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeCentralDirectoryEnd
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_writeCentralDirectoryEnd = function () {
+  var records = this._entries.length;
+  var size = this._archive.centralLength;
+  var offset = this._archive.centralOffset;
+
+  if (this.isZip64()) {
+    records = constants.ZIP64_MAGIC_SHORT;
+    size = constants.ZIP64_MAGIC;
+    offset = constants.ZIP64_MAGIC;
+  }
+
+  // signature
+  this.write(zipUtil.getLongBytes(constants.SIG_EOCD));
+
+  // disk numbers
+  this.write(constants.SHORT_ZERO);
+  this.write(constants.SHORT_ZERO);
+
+  // number of entries
+  this.write(zipUtil.getShortBytes(records));
+  this.write(zipUtil.getShortBytes(records));
+
+  // length and location of CD
+  this.write(zipUtil.getLongBytes(size));
+  this.write(zipUtil.getLongBytes(offset));
+
+  // archive comment
+  var comment = this.getComment();
+  var commentLength = Buffer.byteLength(comment);
+  this.write(zipUtil.getShortBytes(commentLength));
+  this.write(comment);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._writeCentralDirectoryZip64" id="apidoc.element.zip-stream.super_.prototype._writeCentralDirectoryZip64">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeCentralDirectoryZip64
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_writeCentralDirectoryZip64 = function () {
+  // signature
+  this.write(zipUtil.getLongBytes(constants.SIG_ZIP64_EOCD));
+
+  // size of the ZIP64 EOCD record
+  this.write(zipUtil.getEightBytes(56));
+
+  // version made by
+  this.write(zipUtil.getShortBytes(constants.MIN_VERSION_ZIP64));
+
+  // version to extract
+  this.write(zipUtil.getShortBytes(constants.MIN_VERSION_ZIP64));
+
+  // disk numbers
+  this.write(constants.LONG_ZERO);
+  this.write(constants.LONG_ZERO);
+
+  // number of entries
+  this.write(zipUtil.getEightBytes(this._entries.length));
+  this.write(zipUtil.getEightBytes(this._entries.length));
+
+  // length and location of CD
+  this.write(zipUtil.getEightBytes(this._archive.centralLength));
+  this.write(zipUtil.getEightBytes(this._archive.centralOffset));
+
+  // extensible data sector
+  // not implemented at this time
+
+  // end of central directory locator
+  this.write(zipUtil.getLongBytes(constants.SIG_ZIP64_EOCD_LOC));
+
+  // disk number holding the ZIP64 EOCD record
+  this.write(constants.LONG_ZERO);
+
+  // relative offset of the ZIP64 EOCD record
+  this.write(zipUtil.getEightBytes(this._archive.centralOffset + this._archive.centralLength));
+
+  // total number of disks
+  this.write(zipUtil.getLongBytes(1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._writeCentralFileHeader" id="apidoc.element.zip-stream.super_.prototype._writeCentralFileHeader">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeCentralFileHeader
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_writeCentralFileHeader = function (ae) {
+  var gpb = ae.getGeneralPurposeBit();
+  var method = ae.getMethod();
+  var offsets = ae._offsets;
+
+  var size = ae.getSize();
+  var compressedSize = ae.getCompressedSize();
+
+  if (ae.isZip64() || offsets.file &gt; constants.ZIP64_MAGIC) {
+    size = constants.ZIP64_MAGIC;
+    compressedSize = constants.ZIP64_MAGIC;
+
+    ae.setVersionNeededToExtract(constants.MIN_VERSION_ZIP64);
+
+    var extraBuf = Buffer.concat([
+      zipUtil.getShortBytes(constants.ZIP64_EXTRA_ID),
+      zipUtil.getShortBytes(24),
+      zipUtil.getEightBytes(ae.getSize()),
+      zipUtil.getEightBytes(ae.getCompressedSize()),
+      zipUtil.getEightBytes(offsets.file)
+    ], 28);
+
+    ae.setExtra(extraBuf);
+  }
+
+  // signature
+  this.write(zipUtil.getLongBytes(constants.SIG_CFH));
+
+  // version made by
+  this.write(zipUtil.getShortBytes((ae.getPlatform() &lt;&lt; 8) | constants.VERSION_MADEBY));
+
+  // version to extract and general bit flag
+  this.write(zipUtil.getShortBytes(ae.getVersionNeededToExtract()));
+  this.write(gpb.encode());
+
+  // compression method
+  this.write(zipUtil.getShortBytes(method));
+
+  // datetime
+  this.write(zipUtil.getLongBytes(ae.getTimeDos()));
+
+  // crc32 checksum
+  this.write(zipUtil.getLongBytes(ae.getCrc()));
+
+  // sizes
+  this.write(zipUtil.getLongBytes(compressedSize));
+  this.write(zipUtil.getLongBytes(size));
+
+  var name = ae.getName();
+  var comment = ae.getComment();
+  var extra = ae.getCentralDirectoryExtra();
+
+  if (gpb.usesUTF8ForNames()) {
+    name = new Buffer(name);
+    comment = new Buffer(comment);
+  }
+
+  // name length
+  this.write(zipUtil.getShortBytes(name.length));
+
+  // extra length
+  this.write(zipUtil.getShortBytes(extra.length));
+
+  // comments length
+  this.write(zipUtil.getShortBytes(comment.length));
+
+  // disk number start
+  this.write(constants.SHORT_ZERO);
+
+  // internal attributes
+  this.write(zipUtil.getShortBytes(ae.getInternalAttributes()));
+
+  // external attributes
+  this.write(zipUtil.getLongBytes(ae.getExternalAttributes()));
+
+  // relative offset of LFH
+  if (offsets.file &gt; constants.ZIP64_MAGIC) {
+    this.write(zipUtil.getLongBytes(constants.ZIP64_MAGIC));
+  } else {
+    this.write(zipUtil.getLongBytes(offsets.file));
+  }
+
+  // name
+  this.write(name);
+
+  // extra
+  this.write(extra);
+
+  // comment
+  this.write(comment);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._writeDataDescriptor" id="apidoc.element.zip-stream.super_.prototype._writeDataDescriptor">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeDataDescriptor
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_writeDataDescriptor = function (ae) {
+  // signature
+  this.write(zipUtil.getLongBytes(constants.SIG_DD));
+
+  // crc32 checksum
+  this.write(zipUtil.getLongBytes(ae.getCrc()));
+
+  // sizes
+  if (ae.isZip64()) {
+    this.write(zipUtil.getEightBytes(ae.getCompressedSize()));
+    this.write(zipUtil.getEightBytes(ae.getSize()));
+  } else {
+    this.write(zipUtil.getLongBytes(ae.getCompressedSize()));
+    this.write(zipUtil.getLongBytes(ae.getSize()));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype._writeLocalFileHeader" id="apidoc.element.zip-stream.super_.prototype._writeLocalFileHeader">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>_writeLocalFileHeader
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_writeLocalFileHeader = function (ae) {
+  var gpb = ae.getGeneralPurposeBit();
+  var method = ae.getMethod();
+  var name = ae.getName();
+  var extra = ae.getLocalFileDataExtra();
+
+  if (ae.isZip64()) {
+    gpb.useDataDescriptor(true);
+    ae.setVersionNeededToExtract(constants.MIN_VERSION_ZIP64);
+  }
+
+  if (gpb.usesUTF8ForNames()) {
+    name = new Buffer(name);
+  }
+
+  ae._offsets.file = this.offset;
+
+  // signature
+  this.write(zipUtil.getLongBytes(constants.SIG_LFH));
+
+  // version to extract and general bit flag
+  this.write(zipUtil.getShortBytes(ae.getVersionNeededToExtract()));
+  this.write(gpb.encode());
+
+  // compression method
+  this.write(zipUtil.getShortBytes(method));
+
+  // datetime
+  this.write(zipUtil.getLongBytes(ae.getTimeDos()));
+
+  ae._offsets.data = this.offset;
+
+  // crc32 checksum and sizes
+  if (gpb.usesDataDescriptor()) {
+    this.write(constants.LONG_ZERO);
+    this.write(constants.LONG_ZERO);
+    this.write(constants.LONG_ZERO);
+  } else {
+    this.write(zipUtil.getLongBytes(ae.getCrc()));
+    this.write(zipUtil.getLongBytes(ae.getCompressedSize()));
+    this.write(zipUtil.getLongBytes(ae.getSize()));
+  }
+
+  // name length
+  this.write(zipUtil.getShortBytes(name.length));
+
+  // extra length
+  this.write(zipUtil.getShortBytes(extra.length));
+
+  // name
+  this.write(name);
+
+  // extra
+  this.write(extra);
+
+  ae._offsets.contents = this.offset;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype.getComment" id="apidoc.element.zip-stream.super_.prototype.getComment">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>getComment
+        <span class="apidocSignatureSpan">(comment)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getComment = function (comment) {
+  return this._archive.comment !== null ? this._archive.comment : '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype.isZip64" id="apidoc.element.zip-stream.super_.prototype.isZip64">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>isZip64
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isZip64 = function () {
+  return this._archive.forceZip64 || this._entries.length &gt; constants.ZIP64_MAGIC_SHORT || this._archive.centralLength &gt; constants
+.ZIP64_MAGIC || this._archive.centralOffset &gt; constants.ZIP64_MAGIC;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.prototype.setComment" id="apidoc.element.zip-stream.super_.prototype.setComment">
+        function <span class="apidocSignatureSpan">zip-stream.super_.prototype.</span>setComment
+        <span class="apidocSignatureSpan">(comment)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setComment = function (comment) {
+  this._archive.comment = comment;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ }
+
+ if (typeof options.zlib.level === 'number' &amp;&amp; options.zlib.level === 0) {
+   options.store = true;
+ }
+
+ if (options.comment &amp;&amp; options.comment.length &gt; 0) {
+   this.<span class="apidocCodeKeywordSpan">setComment</span>(options.comment);
+ }
+};
+
+inherits(ZipStream, ZipArchiveOutputStream);
+
+/**
+* Normalizes entry data with fallbacks for key properties.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.zip-stream.super_.super_" id="apidoc.module.zip-stream.super_.super_">module zip-stream.super_.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.super_" id="apidoc.element.zip-stream.super_.super_.super_">
+        function <span class="apidocSignatureSpan">zip-stream.super_.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transform(options) {
+  if (!(this instanceof Transform)) return new Transform(options);
+
+  Duplex.call(this, options);
+
+  this._transformState = new TransformState(this);
+
+  var stream = this;
+
+  // start out asking for a readable event once data is transformed.
+  this._readableState.needReadable = true;
+
+  // we have implemented the _read method, and done the other things
+  // that Readable wants before the first _read call, so unset the
+  // sync guard flag.
+  this._readableState.sync = false;
+
+  if (options) {
+    if (typeof options.transform === 'function') this._transform = options.transform;
+
+    if (typeof options.flush === 'function') this._flush = options.flush;
+  }
+
+  // When the writable side finishes, then flush out anything remaining.
+  this.once('prefinish', function () {
+    if (typeof this._flush === 'function') this._flush(function (er, data) {
+      done(stream, er, data);
+    });else done(stream);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.zip-stream.super_.super_.prototype" id="apidoc.module.zip-stream.super_.super_.prototype">module zip-stream.super_.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype._appendBuffer" id="apidoc.element.zip-stream.super_.super_.prototype._appendBuffer">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_appendBuffer
+        <span class="apidocSignatureSpan">(zae, source, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_appendBuffer = function (zae, source, callback) {
+  // scaffold only
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype._appendStream" id="apidoc.element.zip-stream.super_.super_.prototype._appendStream">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_appendStream
+        <span class="apidocSignatureSpan">(zae, source, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_appendStream = function (zae, source, callback) {
+  // scaffold only
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype._emitErrorCallback" id="apidoc.element.zip-stream.super_.super_.prototype._emitErrorCallback">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_emitErrorCallback
+        <span class="apidocSignatureSpan">(err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_emitErrorCallback = function (err) {
+  if (err) {
+    this.emit('error', err);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype._finish" id="apidoc.element.zip-stream.super_.super_.prototype._finish">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_finish
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_finish = function (ae) {
+  // scaffold only
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype._normalizeEntry" id="apidoc.element.zip-stream.super_.super_.prototype._normalizeEntry">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_normalizeEntry
+        <span class="apidocSignatureSpan">(ae)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_normalizeEntry = function (ae) {
+  // scaffold only
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype._transform" id="apidoc.element.zip-stream.super_.super_.prototype._transform">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>_transform
+        <span class="apidocSignatureSpan">(chunk, encoding, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_transform = function (chunk, encoding, callback) {
+  callback(null, chunk);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype.entry" id="apidoc.element.zip-stream.super_.super_.prototype.entry">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>entry
+        <span class="apidocSignatureSpan">(ae, source, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">entry = function (ae, source, callback) {
+  source = source || null;
+
+  if (typeof callback !== 'function') {
+    callback = this._emitErrorCallback.bind(this);
+  }
+
+  if (!(ae instanceof ArchiveEntry)) {
+    callback(new Error('not a valid instance of ArchiveEntry'));
+    return;
+  }
+
+  if (this._archive.finish || this._archive.finished) {
+    callback(new Error('unacceptable entry after finish'));
+    return;
+  }
+
+  if (this._archive.processing) {
+    callback(new Error('already processing an entry'));
+    return;
+  }
+
+  this._archive.processing = true;
+  this._normalizeEntry(ae);
+  this._entry = ae;
+
+  source = util.normalizeInputSource(source);
+
+  if (Buffer.isBuffer(source)) {
+    this._appendBuffer(ae, source, callback);
+  } else if (util.isStream(source)) {
+    this._appendStream(ae, source, callback);
+  } else {
+    this._archive.processing = false;
+    callback(new Error('input source must be valid Stream or Buffer instance'));
+    return;
+  }
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+archive.on('error', function(err) {
+  throw err;
+});
+
+// pipe archive where you want it (ie fs, http, etc)
+// listen to the destination's end, close, or finish event
+
+archive.<span class="apidocCodeKeywordSpan">entry</span>('string contents', { name: 'string.txt' }, function
+(err, entry) {
+  if (err) throw err;
+  archive.entry(null, { name: 'directory/' }, function(err, entry) {
+    if (err) throw err;
+    archive.finish();
+  });
+});
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype.finish" id="apidoc.element.zip-stream.super_.super_.prototype.finish">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>finish
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">finish = function () {
+  if (this._archive.processing) {
+    this._archive.finish = true;
+    return;
+  }
+
+  this._finish();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// pipe archive where you want it (ie fs, http, etc)
+// listen to the destination's end, close, or finish event
+
+archive.entry('string contents', { name: 'string.txt' }, function(err, entry) {
+  if (err) throw err;
+  archive.entry(null, { name: 'directory/' }, function(err, entry) {
+    if (err) throw err;
+    archive.<span class="apidocCodeKeywordSpan">finish</span>();
+  });
+});
+```
+
+## Credits
+
+Concept inspired by Antoine van Wel's [zipstream](https://npmjs.org/package/zipstream) module, which is no longer being updated
+.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype.getBytesWritten" id="apidoc.element.zip-stream.super_.super_.prototype.getBytesWritten">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>getBytesWritten
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getBytesWritten = function () {
+  return this.offset;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.prototype.write" id="apidoc.element.zip-stream.super_.super_.prototype.write">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.prototype.</span>write
+        <span class="apidocSignatureSpan">(chunk, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">write = function (chunk, cb) {
+  if (chunk) {
+    this.offset += chunk.length;
+  }
+
+  return Transform.prototype.write.call(this, chunk, cb);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.zip-stream.super_.super_.super_.prototype" id="apidoc.module.zip-stream.super_.super_.super_.prototype">module zip-stream.super_.super_.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.super_.prototype._read" id="apidoc.element.zip-stream.super_.super_.super_.prototype._read">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>_read
+        <span class="apidocSignatureSpan">(n)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_read = function (n) {
+  var ts = this._transformState;
+
+  if (ts.writechunk !== null &amp;&amp; ts.writecb &amp;&amp; !ts.transforming) {
+    ts.transforming = true;
+    this._transform(ts.writechunk, ts.writeencoding, ts.afterTransform);
+  } else {
+    // mark that we need a transform, so that any data that comes in
+    // will get processed, now that we've asked for it.
+    ts.needTransform = true;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.super_.prototype._transform" id="apidoc.element.zip-stream.super_.super_.super_.prototype._transform">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>_transform
+        <span class="apidocSignatureSpan">(chunk, encoding, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_transform = function (chunk, encoding, cb) {
+  throw new Error('_transform() is not implemented');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.super_.prototype._write" id="apidoc.element.zip-stream.super_.super_.super_.prototype._write">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>_write
+        <span class="apidocSignatureSpan">(chunk, encoding, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_write = function (chunk, encoding, cb) {
+  var ts = this._transformState;
+  ts.writecb = cb;
+  ts.writechunk = chunk;
+  ts.writeencoding = encoding;
+  if (!ts.transforming) {
+    var rs = this._readableState;
+    if (ts.needTransform || rs.needReadable || rs.length &lt; rs.highWaterMark) this._read(rs.highWaterMark);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.zip-stream.super_.super_.super_.prototype.push" id="apidoc.element.zip-stream.super_.super_.super_.prototype.push">
+        function <span class="apidocSignatureSpan">zip-stream.super_.super_.super_.prototype.</span>push
+        <span class="apidocSignatureSpan">(chunk, encoding)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function (chunk, encoding) {
+  this._transformState.needTransform = false;
+  return Duplex.prototype.push.call(this, chunk, encoding);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
